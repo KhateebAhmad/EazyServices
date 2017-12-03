@@ -1,6 +1,6 @@
-# EazyServe - EazyServe web application 
+# EazyServices - EazyServices web application 
 
-# Micro-service configuration for clustering
+# Micro-service configuration
 A property file is used to configure runtime application properties of the micro-services. In future, this properties file should be discarded and a configuration application such as Consule should be used to configure application properties. 
 For clustering, each instance of micro-service runs on specific HTTP and AJP port. These ports are configured in Applications.properties file. Therefore for each instance of micro-service need to be built using different properties file. Here are steps to build war file for each instance using different properties file. 
 1.	Install Apache Maven from https://maven.apache.org/install.html
@@ -8,13 +8,6 @@ For clustering, each instance of micro-service runs on specific HTTP and AJP por
 3.	Build project using following command >mvn clean install 
 4.	This will build a jar and a war file. 
 5.	Run micro-service using inbuilt web server. Optionally, an application server instances (such as wildfly) can be used to deploy micro-service war file. 
-
-# Apache web server installation and configuration
-To configure Apache web server perform following steps
-1.	Install Apache web server from http://httpd.apache.org/docs/2.4/install.html
-2.	Copy all contents under src\main\webapp\css  folder from of TapServeClient project and paste it to %APACHE_HOME%\htdocs directory
-3.	Configure apache by following https://tomcat.apache.org/tomcat-3.3-doc/mod_jk-howto.html 
-4.	Make sure that the host and port (HTTP and AJP) of micro-service is match while configuring workers in Apache server. 
 
 # Database installation and configuration
 To configure MySQL database perform following steps
