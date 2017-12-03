@@ -1,4 +1,4 @@
-# TapServe - TapServe web application 
+# EazyServe - EazyServe web application 
 
 # Micro-service configuration for clustering
 A property file is used to configure runtime application properties of the micro-services. In future, this properties file should be discarded and a configuration application such as Consule should be used to configure application properties. 
