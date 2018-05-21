@@ -1,4 +1,4 @@
-package edu.tcd.tapserve.service;
+package edu.nci.eazyserve.service;
 
 import static org.junit.Assert.assertEquals;
 
