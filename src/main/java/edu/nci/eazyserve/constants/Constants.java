@@ -7,11 +7,11 @@ public class Constants {
 		USER, SERVICE_PROVIDER, ADMIN
 	}
 
-	public static String graphApiURL = "https://graph.facebook.com/v2.2/";
+	public static String graphApiURL = "https://graph.facebook.com/v3.0/";
 
 	public static String friendQueryURL = "/friends?access_token=";
 
-	public static String accessToken = "EAACEdEose0cBAGNJDOblQ25p992bJsGnOMYZCg9k4Yov4ZBRhIcwbqehfOnZA9Iw5A15A5gvZAOHBJrIFPZBNeqk1oeSRqPZCqlWoMQv66WyjlfgUlV9viELIZBusQUCv55nkVLmJFegjupLcVcZABwJoVg4hSt4EcpXwAjstCdCE14hfZA7aNc9r8wpcKZBZAEfssZD";
+	public static String accessToken = "EAACEdEose0cBAEOWCO3lBiMPAVzFzTJXLhBCVRd0CzNFwxyckRLPYc5ZBMyI9eJX0iQdfm4H3IPazbY3qvxPXsK2ars5ZAKnyZB59o7D4cZC5IZBwX3gPpbxlZCbNZAqJTO9kqnbecpLUtyOnhzFgSj3eOpwICZC1DifZCwT17LT1CPTSW5x3vGXDqujSoDa0hIT3hr4NniTB7AZDZD";
 
 	public enum AppointmentStatus {
 		OPEN(0), CLOSED(1), CANCELLED(2);
