@@ -33,11 +33,13 @@ public class FriendService {
 		List<User> friends = getFriends(userId);
 
 		for (RatingReview review : allReviews) {
+			if(friends != null) {
 			for (User friend : friends) {
 				if (friend.getId().equals(review.getUser().getId())) {
 					friendsReviews.add(review);
 					break;
 				}
+			}
 			}
 		}
 
