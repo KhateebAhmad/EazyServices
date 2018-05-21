@@ -23,6 +23,26 @@ public class ReviewService {
 
 	public RatingReview postReviewForServiceProvider(RatingReview review) {
 		review.setId(UUID.randomUUID().toString());
+		
+		if(review.getRating() == null || review.getRating() == 0 || review.getRating() < 0) {
+			
+			if(review.getReview().contains("excellent") || review.getReview().contains("awesome") || review.getReview().contains("superb")) {
+				review.setRating(5);
+			}
+			else if (review.getReview().contains("very good") || review.getReview().contains("great")) {
+				review.setRating(4);
+			}
+			else if (review.getReview().contains("satisfactory") || review.getReview().contains("okay") || review.getReview().contains("good") || review.getReview().contains("average")) {
+				review.setRating(3);
+			}
+			else if (review.getReview().contains("bad") || review.getReview().contains("not good")) {
+				review.setRating(2);
+			}
+			else if (review.getReview().contains("very bad") || review.getReview().contains("unsatisfactory") || review.getReview().contains("poor")) {
+				review.setRating(1);
+			}
+		}
+		
 		ratingReviewRepository.save(review);
 		return review;
 	}
